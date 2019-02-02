@@ -1,6 +1,9 @@
 # UDS : Unlimited Drive Storage - GUI
 
-### A GUI Port of UDS for Windows
+### A GUI Port of UDS for WINE
+Just a mess around with running autoit and its outputed programs under WINE
+THIS DOES NOT WORK AT THE MOMENT
+For a version that runs on linux go check out the original UDS project at [https://github.com/stewartmcgown/uds](https://github.com/stewartmcgown/uds)
 Store files in Google Docs without counting against your quota.
 
 ### Features

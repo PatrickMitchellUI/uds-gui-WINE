@@ -129,13 +129,13 @@ EndFunc
 func file()
 	$filedir = GUICtrlRead($input1)
 	GUICtrlSetData($progress1, 10)
-	FileWrite ( "filedir.bat", "python uds.py push ")
+	FileWrite ( "push.sh", "python uds.py push ")
 	GUICtrlSetData($progress1, 20)
 	
-	FileWrite ( "filedir.bat", $filedir )
+	FileWrite ( "push.sh", $filedir )
 
 	GUICtrlSetData($progress1, 30)
-	FileWrite ( "filedir.bat", "&& pause")
+	FileWrite ( "push.sh", "&& pause")
 	GUICtrlSetData($progress1, 40)
 	custSpam()
 EndFunc
@@ -144,10 +144,10 @@ Func custSpam()
 	ConsoleWrite('@@ (150) :(' & @MIN & ':' & @SEC & ') custSpam()' & @CR) ;### Function Trace
 	GUICtrlSetData($progress1, 50)
 	$rndvarprog = False
-	RunWait("filedir.bat")
+	RunWait("push.sh")
 	GUICtrlSetData($progress1, 60)
 	GUICtrlSetData($progress1, 100)
-	FileDelete ( "filedir.bat" )
+	FileDelete ( "push.sh" )
 	emergencyStop()
 EndFunc   ;==>custSpam
 

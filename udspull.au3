@@ -108,7 +108,7 @@ Func emergencyStop()
 	Send(" ")
 	Send("{ENTER}")
 	Sleep(30)
-	Run("uds.exe", "", "")
+	Run("", "", "")
 	Exit
 EndFunc   ;==>emergencyStop
 
@@ -126,11 +126,11 @@ EndFunc
 func file()
 	$filedir = GUICtrlRead($input1)
 	GUICtrlSetData($progress1, 10)
-	FileWrite ( "pull.bat", "python uds.py pull ")
+	FileWrite ( "pull.sh", "python uds.py pull ")
 	GUICtrlSetData($progress1, 20)
-	FileWrite ( "pull.bat", $filedir )
+	FileWrite ( "pull.sh", $filedir )
 	GUICtrlSetData($progress1, 30)
-	FileWrite ( "pull.bat", "&& pause")
+	FileWrite ( "pull.sh", "&& pause")
 	GUICtrlSetData($progress1, 40)
 	custSpam()
 EndFunc
@@ -139,10 +139,10 @@ Func custSpam()
 	ConsoleWrite('@@ (150) :(' & @MIN & ':' & @SEC & ') custSpam()' & @CR) ;### Function Trace
 	GUICtrlSetData($progress1, 50)
 	$rndvarprog = False
-	RunWait("pull.bat")
+	RunWait("pull.sh")
 	GUICtrlSetData($progress1, 60)
 	GUICtrlSetData($progress1, 100)
-	FileDelete ( "pull.bat" )
+	FileDelete ( "pull.sh" )
 	emergencyStop()
 EndFunc   ;==>custSpam
 
@@ -150,6 +150,6 @@ Func auth()
 	ConsoleWrite('@@ (150) :(' & @MIN & ':' & @SEC & ') custSpam()' & @CR) ;### Function Trace
 	GUICtrlSetData($progress1, 0)
 	$rndvarprog = False
-	RunWait("list.bat")
+	RunWait("list.sh")
 	emergencyStop()
 EndFunc  
