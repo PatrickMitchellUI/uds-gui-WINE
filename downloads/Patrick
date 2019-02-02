@@ -1,0 +1,16 @@
+--2018-11-21 12:11:36--  http://mitchell%5Cappdata%5Clocal%5Ctemp%5Cwsar_download.log/
+Resolving mitchell\appdata\local\temp\wsar_download.log... failed: Unknown host.
+wget: unable to resolve host address `mitchell\appdata\local\temp\wsar_download.log'
+--2018-11-21 12:11:36--  http://myphone-download.wondershare.cc/Rescue/samsimunlock.db
+Resolving myphone-download.wondershare.cc... 210.176.46.21, 210.176.46.32, 210.176.46.28, ...
+Connecting to myphone-download.wondershare.cc|210.176.46.21|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 16384 (16K) [application/octet-stream]
+Saving to: `C:/ProgramData/Wondershare/wsroot/samsimunlock.db.tmp'
+
+     0K .......... ......                                     100%  586K=0.03s
+
+2018-11-21 12:11:36 (586 KB/s) - `C:/ProgramData/Wondershare/wsroot/samsimunlock.db.tmp' saved [16384/16384]
+
+FINISHED --2018-11-21 12:11:36--
+Downloaded: 1 files, 16K in 0.03s (586 KB/s)
